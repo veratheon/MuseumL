@@ -1,0 +1,441 @@
+$roboto: 'Roboto', sans-serif;
+$forum: 'Forum';
+$dark-red: #710707;
+$bg-dark: #030303;
+$font-gold: #9D8665;
+
+%roboto300{
+  font-family: $roboto;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+%minus-plus{
+  position: absolute;
+  height: 50px;
+  bottom: 1px;
+  width: 20px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  font-size: 22px;
+  font-weight: 400;
+  font-family: $roboto;
+}
+
+%input{
+  display: block;
+  height: 50px;
+  font-family: $roboto;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 26px;
+  width: 100%;
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+p{
+  font-family: $roboto;
+}
+
+.subtitle{
+  right: 0px;
+  margin-top: 0px;
+  font-family: $roboto;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color:#000;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0px;
+}
+
+.section {
+  margin: 0 auto;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.section-title{
+  margin-top: 0px;
+  font-family: $forum;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 80px;
+  line-height: 90px;
+  color: $font-gold;
+
+}
+
+.dark-section-title{
+  color: #fff;
+}
+
+  h1{
+    color: #fff;
+    padding-left: 74px;
+    text-transform: uppercase;
+    font-family: $forum;
+    font-size: 28px;
+    font-style: normal;
+    letter-spacing: 5px;
+  }
+  
+  .darkSection {
+    background-color: #030303;
+    color: #fff;
+  }
+
+  .welcomeSection{
+
+    background-image: url("assets/img/welcome.jpg");
+    background-repeat: no-repeat;
+    background-position-x: calc(100%);
+    @extend %roboto300;
+    padding-top: 150px;
+
+    h2{
+      margin-bottom: 25px;
+    }
+
+    p{
+      font-size: 28px;
+      line-height: 33px;
+      margin-bottom: 75px;
+    }
+
+    a{
+      background-color: $dark-red;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 22px;
+      line-height: 26px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 360px;
+      height: 75px;
+      margin-bottom: 180px;
+    }
+  }
+  
+  .videosection {
+    padding: 90px 75px 75px 75px;
+  }
+  
+  .container {
+    padding: 0px;
+    margin: 0px auto;
+    width: 1440px;
+    
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background-color: black;
+    background-image: url("assets/svg/logo.svg");
+    background-position-y: 59px;
+    background-repeat: no-repeat;
+    
+  }
+  
+  nav {
+    font-family: $roboto;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-style: normal;
+    width: 740px;
+    color: white;
+
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
+
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    li {
+      padding: 0px 5px;
+      list-style: none;
+      line-height: 26px;
+    }
+  }
+
+.underline-title{
+  position: relative;
+
+  &::after{
+  content: "";
+  position: absolute;
+  background-color: $dark-red;
+  left: 0;
+  bottom: -25px;
+  right: 0;
+  height: 3px;
+  }
+}
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 15px;
+
+  a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+
+    h3{
+      margin-top: 25px;
+      font-family: $forum;
+      font-size: 32px;
+      letter-spacing: 5px;
+      line-height: 35px;
+
+      &::after{
+        height: 2px;
+        width: 300px;
+        bottom: -10px;
+      }
+    }
+
+    p{
+      font-family: $roboto;
+      font-weight: 200;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+}
+
+.explore{
+  display: flex;
+  justify-content: space-between;
+
+  .underline-title{
+    margin-bottom: 103px;
+
+    &::after{
+      width: 660px;
+    }
+  }
+
+  p{
+    @extend %roboto300;
+    letter-spacing: 0px;
+    font-size: 22px;
+    line-height: 38px;
+    margin-top: 25px;
+  }
+
+  img{
+    width: 720px;
+    height: 700px;
+  }
+
+  span{
+    color: #CAAA7D;
+  }
+}
+
+.video{
+  p{
+    font-weight: 300px;
+    font-size: 22px;
+    line-height: 38px;
+    margin-top: 10px;
+  }
+
+
+  .content{
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.tickets{
+
+  position: relative;
+  color: #000;
+
+  .buy{
+    background-color: #000;
+    width: 175px;
+    height: 50px;
+    color: #fff;
+    @extend %roboto300;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 80px;
+  }
+
+  p, label{
+  @extend %roboto300;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  }
+
+  .number {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    
+  
+  input[type="number"] {
+  @extend %input;
+  }
+  
+  .number-minus {
+    bottom: auto;
+    @extend %minus-plus;
+    left: 1px;
+
+  }
+  .number-plus {
+    top: 215px;
+    @extend %minus-plus;
+    right: 1px;
+  }
+}
+
+  .number1 {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+
+  input[type="number"] {
+    @extend %input;
+  }
+
+  .number-minus1 {
+    bottom: 251px;
+    @extend %minus-plus;
+    left: 1px;
+
+  }
+  .number-plus1 {
+    @extend %minus-plus;
+    bottom: 251px;
+    right: 1px;
+  }
+}
+
+  input{
+    margin-bottom: 25px;
+  }
+
+  .tickets-type{
+    position: absolute;
+    top: 226px;
+    left: 780px;
+
+    p{
+      margin-bottom: 50px;
+    }
+  }
+
+  .amount{
+
+    label{
+      margin: 20px 0px;
+    }
+
+    position: absolute;
+    right: 0px;
+    top: 226px;
+  }
+
+  img{
+    margin-top: 0px;
+  }
+
+  .underline-title{
+    width: 100%;
+  }
+}
+
+.contacts{
+
+  ul{
+    padding: 0px;
+  }
+
+  li{
+
+    list-style: none;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    margin-bottom: 25px;
+  }
+
+  .content{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer-container{
+  height: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background-image: url(assets/svg/logo.svg);
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  
+nav{
+  width: 400px;
+  ol{
+    list-style: none;
+    column-count: 2;
+  }
+}
+
+li{
+  list-style: none;
+  display: inline;
+  padding-left: 90px;
+
+}
+
+}
+
+a:hover{
+  color: #CAAA7D;
+}
+
+a:visited{
+  color: #710707;
+}
+
+
