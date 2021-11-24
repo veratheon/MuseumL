@@ -104,9 +104,8 @@ body{
 
   .welcomeSection{
 
-    background-image: url("assets/img/welcome.jpg");
-    background-repeat: no-repeat;
-    background-position-x: calc(100%);
+    background-image: url("");
+
     @extend %roboto300;
     padding-top: 150px;
 
@@ -435,7 +434,91 @@ a:hover{
 }
 
 a:visited{
-  color: #710707;
+  color: #460202;
+}
+
+.welcome-container{
+  a{
+    color: #fff;
+  }
+  display: flex;
+  justify-content: space-between;
 }
 
 
+
+
+.flex-wrapper {
+  
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+#btn-prev,
+#btn-next {
+  position: absolute;
+  border: solid #fff;
+  transform: rotate(135deg);
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+  top: 98%;
+  left: 65%;
+  cursor: pointer;
+}
+
+#btn-prev,
+#btn-next {
+  opacity: 0.6;
+}
+#btn-prev:hover,
+#btn-next:hover{
+  opacity: 1;
+}
+#btn-next {
+  left: 85%;
+  transform: rotate(-45deg);
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.dots-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+
+.dot.active {
+  background-color: $font-gold;
+}
+
+span {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+span:last-child {
+  margin-right: 0;
+}

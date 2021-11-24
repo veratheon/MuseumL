@@ -1,10 +1,10 @@
-.welcomeSection, .explore p, .tickets .buy, .tickets p, .tickets label {
+.tickets p, .tickets label, .tickets .buy, .explore p, .welcomeSection {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   letter-spacing: 2px;
 }
 
-.tickets .number .number-minus, .tickets .number .number-plus, .tickets .number1 .number-minus1, .tickets .number1 .number-plus1 {
+.tickets .number1 .number-plus1, .tickets .number1 .number-minus1, .tickets .number .number-plus, .tickets .number .number-minus {
   position: absolute;
   height: 50px;
   bottom: 1px;
@@ -19,7 +19,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-.tickets .number input[type="number"], .tickets .number1 input[type="number"] {
+.tickets .number1 input[type=number], .tickets .number input[type=number] {
   display: block;
   height: 50px;
   font-family: "Roboto", sans-serif;
@@ -29,8 +29,7 @@
   width: 100%;
   padding: 0;
   margin: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
@@ -97,22 +96,17 @@ h1 {
 }
 
 .welcomeSection {
-  background-image: url("assets/img/welcome.jpg");
-  background-repeat: no-repeat;
-  background-position-x: calc(100%);
+  background-image: url("");
   padding-top: 150px;
 }
-
 .welcomeSection h2 {
   margin-bottom: 25px;
 }
-
 .welcomeSection p {
   font-size: 28px;
   line-height: 33px;
   margin-bottom: 75px;
 }
-
 .welcomeSection a {
   background-color: #710707;
   text-decoration: none;
@@ -120,15 +114,9 @@ h1 {
   font-size: 22px;
   line-height: 26px;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 360px;
   height: 75px;
   margin-bottom: 180px;
@@ -145,15 +133,9 @@ h1 {
 }
 
 .header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   height: 150px;
   background-color: black;
   background-image: url("assets/svg/logo.svg");
@@ -170,24 +152,15 @@ nav {
   width: 740px;
   color: white;
 }
-
 nav a {
   text-decoration: none;
   color: #fff;
 }
-
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
 nav li {
   padding: 0px 5px;
   list-style: none;
@@ -197,7 +170,6 @@ nav li {
 .underline-title {
   position: relative;
 }
-
 .underline-title::after {
   content: "";
   position: absolute;
@@ -209,23 +181,16 @@ nav li {
 }
 
 .card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 10px 15px;
 }
-
 .card-container a {
   display: block;
   text-decoration: none;
   color: #000;
 }
-
 .card-container a h3 {
   margin-top: 25px;
   font-family: "Forum";
@@ -233,13 +198,11 @@ nav li {
   letter-spacing: 5px;
   line-height: 35px;
 }
-
 .card-container a h3::after {
   height: 2px;
   width: 300px;
   bottom: -10px;
 }
-
 .card-container a p {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
@@ -248,34 +211,25 @@ nav li {
 }
 
 .explore {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .explore .underline-title {
   margin-bottom: 103px;
 }
-
 .explore .underline-title::after {
   width: 660px;
 }
-
 .explore p {
   letter-spacing: 0px;
   font-size: 22px;
   line-height: 38px;
   margin-top: 25px;
 }
-
 .explore img {
   width: 720px;
   height: 700px;
 }
-
 .explore span {
   color: #CAAA7D;
 }
@@ -286,22 +240,16 @@ nav li {
   line-height: 38px;
   margin-top: 10px;
 }
-
 .video .content {
   margin-right: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .tickets {
   position: relative;
   color: #000;
 }
-
 .tickets .buy {
   background-color: #000;
   width: 175px;
@@ -311,73 +259,59 @@ nav li {
   line-height: 26px;
   margin-top: 80px;
 }
-
 .tickets p, .tickets label {
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0px;
 }
-
 .tickets .number {
   display: inline-block;
   position: relative;
   width: 150px;
 }
-
 .tickets .number .number-minus {
   bottom: auto;
   left: 1px;
 }
-
 .tickets .number .number-plus {
   top: 215px;
   right: 1px;
 }
-
 .tickets .number1 {
   display: inline-block;
   position: relative;
   width: 150px;
 }
-
 .tickets .number1 .number-minus1 {
   bottom: 251px;
   left: 1px;
 }
-
 .tickets .number1 .number-plus1 {
   bottom: 251px;
   right: 1px;
 }
-
 .tickets input {
   margin-bottom: 25px;
 }
-
 .tickets .tickets-type {
   position: absolute;
   top: 226px;
   left: 780px;
 }
-
 .tickets .tickets-type p {
   margin-bottom: 50px;
 }
-
 .tickets .amount {
   position: absolute;
   right: 0px;
   top: 226px;
 }
-
 .tickets .amount label {
   margin: 20px 0px;
 }
-
 .tickets img {
   margin-top: 0px;
 }
-
 .tickets .underline-title {
   width: 100%;
 }
@@ -385,7 +319,6 @@ nav li {
 .contacts ul {
   padding: 0px;
 }
-
 .contacts li {
   list-style: none;
   font-size: 22px;
@@ -393,42 +326,27 @@ nav li {
   letter-spacing: 0px;
   margin-bottom: 25px;
 }
-
 .contacts .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer-container {
   height: 230px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
   background-image: url(assets/svg/logo.svg);
   background-repeat: no-repeat;
   background-position-y: 20px;
 }
-
 .footer-container nav {
   width: 400px;
 }
-
 .footer-container nav ol {
   list-style: none;
-  -webkit-column-count: 2;
-          column-count: 2;
+  column-count: 2;
 }
-
 .footer-container li {
   list-style: none;
   display: inline;
@@ -440,6 +358,90 @@ a:hover {
 }
 
 a:visited {
-  color: #710707;
+  color: #460202;
 }
+
+.welcome-container {
+  display: flex;
+  justify-content: space-between;
+}
+.welcome-container a {
+  color: #fff;
+}
+
+.flex-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.flex-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+#btn-prev,
+#btn-next {
+  position: absolute;
+  border: solid #fff;
+  transform: rotate(135deg);
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+  top: 98%;
+  left: 65%;
+  cursor: pointer;
+}
+
+#btn-prev,
+#btn-next {
+  opacity: 0.6;
+}
+
+#btn-prev:hover,
+#btn-next:hover {
+  opacity: 1;
+}
+
+#btn-next {
+  left: 85%;
+  transform: rotate(-45deg);
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.dots-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+
+.dot.active {
+  background-color: #9D8665;
+}
+
+span {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+span:last-child {
+  margin-right: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
