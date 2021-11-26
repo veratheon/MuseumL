@@ -548,11 +548,6 @@ span:last-child {
   transform: rotate(-45deg);
 }
 
-
-
-
-
-
 .video-slide-container{
 
   .flex-wrapper {
@@ -604,5 +599,37 @@ span:last-child {
   
   span:last-child {
     margin-right: 0;
+  }
+}
+
+.picture-container{
+  height: 2125px;
+  overflow-y: hidden;
+
+
+
+}
+
+.picture-inner-container{
+  height: 3000px;
+  display: flex;
+  column-gap: 36px;
+  row-gap: 24px;
+  flex-flow: column wrap;
+  &::after{
+    content: "";
+    display: block;    
+    width: 100%;
+    height: 100%;    
+    top: 0;      
+    left: 0;   
+    background: transparent;
+    background-image: linear-gradient(linear-gradient(rgba(0, 0, 0, 0), 10%, rgb(0, 0, 0)));
+    opacity: 0.8;
+  }
+
+  img{
+    width: 456px;
+    box-sizing: border-box;
   }
 }
