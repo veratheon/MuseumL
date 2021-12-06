@@ -7,6 +7,8 @@
     <title>Museum</title>
     <link rel="stylesheet" href="style.css">
 
+    <script src="https://kit.fontawesome.com/e449e10b39.js" crossorigin="anonymous"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 
@@ -266,9 +268,12 @@
                     <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp();
                      this.previousElementSibling.onchange();">+</button>
                     
-                    <button class = "buy">Buy Now</button>
+                    
+
+                    <button class = "buy" id="btn-buy">Buy Now</button>
                 </div>
             </div>
+            
         </section>
 
         <section class="section contacts" id="contacts">
@@ -322,6 +327,91 @@
 
         </div>
     </footer>
-    
+    <section>
+        <div class="container">
+        
+    <form class="forma">
+        <button id='closeForm'><i class="close fas fa-times" id="close"></i></button>
+
+        <div class="booking-tickets">
+            
+
+            <img src="assets/svg/logo1.svg" alt="logo">
+            <h2 class="section-title">Booking Tickets</h2>
+            <p class="underline-title">Tour to Louvre</p>
+            <div class = "flex-date">
+            <div class="font-user">
+            <i class="fas fa-clock"></i>
+            <input class = "date-time" type="text" name="name" required="required"  placeholder="Date">
+            </div>
+            <div class="font-user">
+            <i class="fas fa-calendar-day"></i>
+            <input class = "date-time" type="text" name="name" required="required"  placeholder="Time">
+            </div>
+        </div>
+            <div class="font-user">
+            <i class="fas fa-user"></i>
+            <input type="text" name="name" required="required"  placeholder="Name">
+            </div>
+            <div class="font-user">
+            <i class="fas fa-envelope"></i>
+            <input type="text" name="email" required="required" placeholder="Email">
+            </div>
+            <div class="font-user">
+            <i class="fas fa-phone-alt"></i>
+            <input type="text" name="phone" required="required" placeholder="Phone">
+            </div>
+            <div class="font-user">
+            <i class="fas fa-clipboard-list"></i>
+            <input type="text" name="phone" required="required" placeholder="Ticket Type">
+            </div>
+            <div class="entry-ticket">
+                <h2 class="underline-title">Entry Ticket</h2>
+                <p class="mini-p">Basic 18+ (20 €)</p>
+                <p class="mini-p">Senior 65+ (10 €)</p>
+
+
+            </div>
+
+        </div>
+        <div class="overview">
+            <h3>Overview</h3>
+            <img src="assets/img/overview.jpg" alt="louvre">
+            <p class="red-p">Tour to Louvre</p>
+            <p class="mini-p"><i class="fas fa-calendar-day"></i>Friday, August 19</p>
+            <p class="mini-p"><i class="fas fa-clock"></i>16:30</p>
+            <p class="mini-p"><i class="far fa-check-circle"></i>Temporary exhibition</p>
+
+            <div class="price">
+
+            <div>
+            <div class="inline">
+            <p id="total-basic-tickets">2</p>
+            <p class="semi-p">Basic (20 €)</p>
+        </div>
+        <div class="inline">
+                <p id="total-senior-tickets">2</p>
+            <p class="semi-p">Senior (10 €)</p>
+            </div>
+        </div>
+        <div>
+            <p class="semi-p" id="total-basic-price">20</p>
+            <p class="semi-p" id="total-senior-price">20</p>
+        </div>
+        
+            </div>
+            <p class="underline-title"></p>
+
+            <div class="price">
+                <p class="total">Total</p>
+                <p class="total" id="total">60</p>
+            </div>
+            <button id="book">book</button>
+        </div>
+
+    </form>
+</div>
+</section>
+<script src="form.js"></script>
 </body>
 </html>
