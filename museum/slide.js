@@ -7,6 +7,9 @@ next1 = document.getElementById('btn-next-video'),
 slides1 = document.querySelectorAll('.video-slide'),
 dots1 = document.querySelectorAll('.dot-video');
 
+
+
+
 let index = 0; // текущий активный слайд
 
 const activeSlide1 = (n) => {

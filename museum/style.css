@@ -256,6 +256,7 @@ nav li {
 }
 .tickets button:hover {
   background-color: #710707;
+  cursor: pointer;
 }
 .tickets .buy {
   background-color: #000;
@@ -322,6 +323,9 @@ nav li {
 .tickets .underline-title {
   width: 100%;
 }
+.tickets .check {
+  background-color: aquamarine;
+}
 
 .contacts ul {
   padding: 0px;
@@ -362,6 +366,7 @@ nav li {
 
 a:hover {
   color: #CAAA7D;
+  cursor: pointer;
 }
 
 a:visited {
@@ -412,6 +417,7 @@ a:visited {
 #btn-prev:hover,
 #btn-next:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 #btn-next {
@@ -537,17 +543,22 @@ span:last-child {
 
 form {
   display: none;
-  justify-content: space-between;
   margin: 91px 235px;
-  position: absolute;
-  width: 1000px;
-  height: 600px;
+  position: fixed;
+  top: 0px;
+  left: calc(50% - 800px);
+  width: 1300px;
+  height: 1000px;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6e6;
+  z-index: 2;
 }
 form #close {
   position: absolute;
   margin-right: 30px;
   margin-left: 1000px;
-  margin-top: -36px;
+  margin-top: -360px;
 }
 form .close {
   width: 25px;
@@ -559,7 +570,18 @@ form p {
 form .overview {
   width: 50%;
 }
+form .overview button:hover {
+  background-color: black;
+  cursor: pointer;
+}
 form input {
+  height: 45px;
+  width: 400px;
+  margin-bottom: 20px;
+  padding: 0px 30px;
+  box-sizing: border-box;
+}
+form select {
   height: 45px;
   width: 400px;
   margin-bottom: 20px;
@@ -716,22 +738,20 @@ form .semi-p {
   line-height: 26px;
   color: #030303;
 }
-
-.active-form {
-  position: fixed;
-  top: 0;
-  left: calc(50% - 800px);
-  width: 1300px;
-  height: 1000px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #e6e6e6;
-  z-index: 1;
+form button:hover {
+  cursor: pointer;
 }
 
-.check {
-  background-color: aquamarine;
+.active-form {
+  display: flex;
+}
+
+.parallax {
+  width: 100%;
+  height: 500px;
+  background-image: url("assets/img/parallax.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /*# sourceMappingURL=style.css.map */
